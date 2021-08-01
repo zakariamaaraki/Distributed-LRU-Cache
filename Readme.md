@@ -4,19 +4,19 @@ Implementation of a distributed caching solution (**LRU** : Least recently used)
 
 ## Getting Started
 Build the docker image by running the following command :
-```aidl
+```
 docker build image . -t zcache
 ```
 
 Then run the container by running the following command :
-```aidl
+```
 docker container run -p 9999:9999 -e ZOOKEEPER_HOST=zookeeper_url -e NODE_ID=1 -e CACHE_CAPACITY=1000000 zcache
 ```
 
 Note that each instance must have a unique **NODE_ID** !! \
 If the environment variable **CACHE_CAPACITY** is not mentioned the default value would be 1000000 \
 If you are running Zookeeper locally using docker, do not forget to use the same network
-```aidl
+```
 --network your_zookeeper_network
 ```
 
