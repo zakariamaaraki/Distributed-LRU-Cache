@@ -1,0 +1,32 @@
+server:
+  port: 9999
+  servlet:
+    context-path: /
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: env, health, info, metrics, mappings, shutdown, threaddump
+
+endpoints:
+  zookeeper:
+    enabled: true
+
+spring:
+  application:
+    name: zcache
+    capacity: ${CACHE_CAPACITY:1000000}
+  cloud:
+    zookeeper:
+      connect-string: ${ZOOKEEPER_HOST:localhost:2181}
+      discovery:
+        enabled: true
+        instance-id: ${NODE_ID:1}
+    loadbalancer:
+      ribbon:
+        enabled: false
+
+logging:
+  level:
+    org.apache.zookeeper.ClientCnxn: WARN
