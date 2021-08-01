@@ -16,7 +16,8 @@ Then run the container by running the following command :
 docker container run -p 9999:9999 -e ZOOKEEPER_HOST=zookeeper_url -e NODE_ID=1 -e CACHE_CAPACITY=1000000 zcache
 ```
 
-* Note that each instance must have a unique **NODE_ID** !! 
+#### Note that :
+* Each instance must have a unique **NODE_ID** !! 
 * If the environment variable **CACHE_CAPACITY** is not mentioned the default value would be 1000000 
 * If you are running Zookeeper locally using docker, do not forget to use the same network
 
