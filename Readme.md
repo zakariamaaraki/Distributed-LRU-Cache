@@ -2,6 +2,8 @@
 
 Implementation of a distributed caching solution (**LRU** : Least recently used) using **ZooKeeper**. 
 
+![Alt text](./zcache-archi.png?raw=true "ZCache Architecture")
+
 ## Getting Started
 Build the docker image by running the following command :
 ```
