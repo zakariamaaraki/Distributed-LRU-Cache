@@ -39,7 +39,7 @@ At the same time, we're using ZooKeeper as Service Discovery using Spring Cloud 
 
 ### Consistency vs Availability
 Note that according to the **[CAP theorem](https://en.wikipedia.org/wiki/CAP_theorem)**, ZooKeeper is a **CP** system. This implies that it sacrifices availability in order to achieve consistency and partition tolerance. In other words, if it cannot guarantee correct behaviour it will not respond to queries. \
-Using a Service Discovery with a **CP** system is not a good idea, so it might be better if we use **Eureka** (which is a **AP** system) as a service discovery/registry instead of **ZooKeeper** (to guarantee availability) but in this case we'll need to set up another cluster.
+Using a Service Discovery with a **CP** system is not a good idea, so it might be better if we use **Eureka** (which is an **AP** system) as a service discovery/registry instead of **ZooKeeper** (to guarantee availability) but in this case we'll need to set up another cluster.
 
 ## Endpoints
 
