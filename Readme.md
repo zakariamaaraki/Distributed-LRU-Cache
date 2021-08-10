@@ -49,6 +49,11 @@ Using a Service Discovery with a **CP** system is not a good idea, so it might b
 ### Health check API
 ![Alt text](./zcache-health-check.png?raw=true "ZCache API")
 
+## Guarantees
+* **Scalable** scale out easily together with increasing number of requests and data.
+* **Highly Available** Survives hardware/network failures (Relication + Leader Election)
+* **Highly Performant** fast puts, gets and fast delete.
+
 ## Author
 
 - **Zakaria Maaraki** - _Initial work_ - [zakariamaaraki](https://github.com/zakariamaaraki)
