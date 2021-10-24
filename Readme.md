@@ -1,3 +1,5 @@
+[![Build and Test](https://github.com/zakariamaaraki/Distributed-LRU-Cache/actions/workflows/build.yml/badge.svg)](https://github.com/zakariamaaraki/Distributed-LRU-Cache/actions/workflows/build.yml) [![Docker](https://badgen.net/badge/icon/docker?icon=docker&label)](https://https://docker.com/) [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
+
 # Distributed Cache
 
 Implementation of a distributed caching solution (**LRU** : Least recently used) using **ZooKeeper**. 
