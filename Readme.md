@@ -53,7 +53,7 @@ Using a Service Discovery with a **CP** system is not a good idea, so it might b
 
 ## Guarantees
 * **Scalable** scale out easily together with increasing number of requests and data.
-* **Highly Available** Survives hardware/network failures (Relication + Leader Election)
+* **Highly Available** Survives hardware/network failures (Replication + Leader Election)
 * **Highly Performant** fast puts, gets and fast delete.
 
 ## Author
